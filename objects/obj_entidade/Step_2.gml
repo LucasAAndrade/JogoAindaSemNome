@@ -17,6 +17,7 @@ repeat(abs(velh))
 {
 	if(place_meeting(x + _velh, y, obj_block))
 	{
+
 		velh = 0;
 		break;
 	}
@@ -32,3 +33,4 @@ repeat(abs(velv))
 	}
 	y += _velv;
 }
+

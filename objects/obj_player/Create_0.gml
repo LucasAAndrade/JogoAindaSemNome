@@ -1,12 +1,21 @@
 //rescrevendo os eventos
 event_inherited();
 
+//hook
+mx = x;
+my = y;
+ativo = false;
 
 vida_max = 10;
 vida_atual = vida_max;
 
 max_velh = 4;
-max_velv = 12;
+max_velv = 20;
+
+
+mvtLocked = 0;
+dashSpd = 20;
+dashDuration = 0;
 
 mostra_estado = true;
 
