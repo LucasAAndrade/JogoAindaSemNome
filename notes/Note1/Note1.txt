@@ -1,0 +1,12 @@
+1. player
+	1.1 movimentação - pronto;
+	1.2 gravidade - pronto;
+	1.3 colisão - pronto;
+	1.4 pulo - pronto;
+	1.5 pulo duplo - pronto;
+	1.6 wallJump
+	
+2. State Machine
+	2.1 Parado - pronto;
+	2.2 Mostrando quando o usuario pedir - pronto
+	2.3 Trocando os estados - pronto
