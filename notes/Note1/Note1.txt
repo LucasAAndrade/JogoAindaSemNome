@@ -1,12 +1,21 @@
 1. player
-	1.1 movimentação - pronto;
-	1.2 gravidade - pronto;
-	1.3 colisão - pronto;
-	1.4 pulo - pronto;
-	1.5 pulo duplo - pronto;
-	1.6 wallJump
+	1.1 Movimentação - pronto;
+	1.2 Gravidade - pronto;
+	1.3 Colisão - pronto;
+	1.4 Pulo - pronto;
+	1.5 Pulo duplo - pronto;
+	1.6 WallJump - pronto;
+	1.7 Hook - pronto;
+	1.8 Dash - pronto;
+	1.9 Vida - 
+	2.0 
 	
 2. State Machine
 	2.1 Parado - pronto;
-	2.2 Mostrando quando o usuario pedir - pronto
-	2.3 Trocando os estados - pronto
+	2.2 Mostrando quando o usuario pedir - pronto;
+	2.3 Trocando os estados - pronto;
+	2.4 Checkpoint - pronto;
+	
+3. Ajustes
+	3.1 Ajustar o hook - pronto;
+	3.2 ajuste do dash - pronto;

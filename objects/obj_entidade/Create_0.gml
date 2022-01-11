@@ -19,5 +19,8 @@ ataque = 1;
 pulos_max = 2;
 pulos = pulos_max;
 
+dashQ = 1;
+dashQQ = dashQ;
+
 mostra_estado = false;
 estado = "parado";

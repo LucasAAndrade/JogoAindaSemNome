@@ -17,6 +17,8 @@ mvtLocked = 0;
 dashSpd = 20;
 dashDuration = 0;
 
+
+
 mostra_estado = true;
 
 //upgrades
@@ -45,4 +47,10 @@ aplicando_gravidade = function()
 		velv += GRAVIDADE * massa;
 		}
 	}
+}
+
+if(global.checkpointR == room)
+{
+	x = global.checkpointX
+	y = global.checkpointY
 }

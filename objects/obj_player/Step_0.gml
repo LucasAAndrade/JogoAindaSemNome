@@ -19,25 +19,24 @@ else if (onAWall != 0) velv = min(velv + 1, 5);
 else velv++;
 
  //checando o hook
-if(mouse_check_button_pressed(mb_left))
-{
 
+if(mouse_check_button_pressed(mb_left) )
+{
 	mx = mouse_x;
 	my = mouse_y;
 	if(place_meeting(mx,my,	obj_blockHook))
 	{
 		ativo = true;
 	}
-
 }
 
-if(ativo)
+if(ativo && !place_meeting(x, y, obj_block))
 {
 	velv = 10;
 	massa = 0.3;
 	x += (mx - x ) * 0.1;
 	y += (my - y ) * 0.1;
-
+	
 }
 
 if(mouse_check_button_released(mb_left))
@@ -64,6 +63,9 @@ switch(estado)
 	#region parado
 	case "parado" :
 	{
+	
+	
+	pulos = pulos_max;
 	max_velh = 4;
 	//parando o mid_velh
 	mid_velh = 0;
@@ -79,8 +81,9 @@ switch(estado)
 		else if(jump2 || !chao)
 		{
 			estado = "pulando";
-		}else if (dash)
+		}else if (dash and dashQQ > 0)
 		{
+			dashQQ -= 1;
 			estado = "dash";
 		}
 		break;
@@ -102,9 +105,10 @@ switch(estado)
 		}else if(jump2 || !chao)
 		{
 			estado = "pulando";
-		}else if (dash)
+		}else if (dash and dashQQ > 0)
 		{
 			estado = "dash";
+			dashQQ -= 1;
 		}
 	
 		break;
@@ -133,8 +137,9 @@ switch(estado)
 		{
 			estado = "parado";
 			
-		}else if (dash)
+		}else if (dash and dashQQ > 0)
 		{
+			dashQQ -= 1;
 			estado = "dash";
 		}
 		//walljump
@@ -170,6 +175,7 @@ switch(estado)
 	#region "dash"
 	case "dash" :
 	{
+		alarm [0] = room_speed;
 		max_velh = 300;
 		//movendo a sprite
 		sprite_index = spr_player_dash;
@@ -179,14 +185,25 @@ switch(estado)
 		dashDuration = 5;
 		velh = image_xscale * dashSpd;
 		
+		
+		
 		if(image_index >= image_number - 1)
 		{
 			estado = "parado";
 		}	
 		break;
 	}
-	#endregion
-		
+	#endregion	
 }
 
+if(y > 832){
+	if(global.checkpointR != 0)
+	{
+		room_goto(global.checkpointR)
+	}
+	else
+	{
+		room_restart();
+	}
+}
 

@@ -26,8 +26,8 @@ repeat(abs(velh))
 repeat(abs(velv))
 {
 	if(place_meeting(x, y + _velv, obj_block))
-	{
-		pulos = pulos_max;
+	{	
+		dashQQ = dashQ;
 		velv = 0;
 		break;
 	}

@@ -1,15 +1,21 @@
 {
   "resources": [
+    {"id":{"name":"spr_checkpoint","path":"sprites/spr_checkpoint/spr_checkpoint.yy",},"order":6,},
+    {"id":{"name":"src_death","path":"scripts/src_death/src_death.yy",},"order":1,},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"order":1,},
+    {"id":{"name":"obj_checkpoint","path":"objects/obj_checkpoint/obj_checkpoint.yy",},"order":4,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"obj_blockHook","path":"objects/obj_blockHook/obj_blockHook.yy",},"order":3,},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},"order":0,},
     {"id":{"name":"spr_player_dash","path":"sprites/spr_player_dash/spr_player_dash.yy",},"order":0,},
+    {"id":{"name":"spr_espinhos","path":"sprites/spr_espinhos/spr_espinhos.yy",},"order":7,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},"order":1,},
+    {"id":{"name":"obj_espinhos","path":"objects/obj_espinhos/obj_espinhos.yy",},"order":5,},
     {"id":{"name":"scr_ini","path":"scripts/scr_ini/scr_ini.yy",},"order":0,},
     {"id":{"name":"obj_entidade","path":"objects/obj_entidade/obj_entidade.yy",},"order":2,},
     {"id":{"name":"spr_blockHook","path":"sprites/spr_blockHook/spr_blockHook.yy",},"order":5,},
+    {"id":{"name":"rm_inicial","path":"rooms/rm_inicial/rm_inicial.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -25,6 +31,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_inicial","path":"rooms/rm_inicial/rm_inicial.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [
