@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_checkpoint",
-    "path": "sprites/spr_checkpoint/spr_checkpoint.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,17 +18,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Solidos",
-    "path": "folders/Objects/Solidos.yy",
+    "name": "Controles",
+    "path": "folders/Objects/Controles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_checkpoint",
+  "name": "obj_camera",
   "tags": [],
   "resourceType": "GMObject",
 }

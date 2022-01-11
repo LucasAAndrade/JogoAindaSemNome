@@ -1,17 +1,23 @@
 //rescrevendo os eventos
 event_inherited();
 
+//criando a cam
+var cam = instance_create_layer(x, y, layer, obj_camera);
+cam.alvo = id;
+
+//vida
+aphaa = 1;
+alarm[0] = room_speed *3;
+
 //hook
 mx = x;
 my = y;
 ativo = false;
 
-vida_max = 10;
-vida_atual = vida_max;
 
 max_velh = 4;
 max_velv = 20;
-
+spd = 6;
 
 mvtLocked = 0;
 dashSpd = 20;
@@ -47,6 +53,22 @@ aplicando_gravidade = function()
 		velv += GRAVIDADE * massa;
 		}
 	}
+}
+
+perde_vida = function(){
+	if(global.vidaT >= 0)
+	{
+		global.vidaT--;
+		aphaa = 1;
+	}
+	if(global.vidaT < 0 )
+	{	
+		global.vidaT = 3;
+		global.checkpoint = 0;
+		global.checkpointR = 0;
+		room_restart()
+	}
+
 }
 
 if(global.checkpointR == room)

@@ -7,8 +7,11 @@
 	1.6 WallJump - pronto;
 	1.7 Hook - pronto;
 	1.8 Dash - pronto;
-	1.9 Vida - 
-	2.0 
+	1.9 Camera - pronto;
+	1.10 vida -  pronto;
+	1.11 aumentar vida - pronto;
+	1.12 aumentar o slot de vida - pronto;
+	1.13 interação - 
 	
 2. State Machine
 	2.1 Parado - pronto;
@@ -19,3 +22,7 @@
 3. Ajustes
 	3.1 Ajustar o hook - pronto;
 	3.2 ajuste do dash - pronto;
+	
+4. Mapa
+	4.1 alternando bloco -
+	

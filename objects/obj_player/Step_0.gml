@@ -1,8 +1,9 @@
 //movimentação do personagem
-var left, right, attack, dash, corda;
+var left, right, dash, corda;
 var chao = place_meeting(x, y + 1, obj_block);
 var onAWall = place_meeting(x-5, y, obj_block) - place_meeting(x+5, y, obj_block);
 corda = mouse_check_button_pressed(mb_left);
+vida = global.vidaT;
 
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
@@ -24,7 +25,7 @@ if(mouse_check_button_pressed(mb_left) )
 {
 	mx = mouse_x;
 	my = mouse_y;
-	if(place_meeting(mx,my,	obj_blockHook))
+	if(place_meeting(mx,my,	obj_blockHook) and my < y)
 	{
 		ativo = true;
 	}
@@ -65,8 +66,8 @@ switch(estado)
 	{
 	
 	
-	pulos = pulos_max;
-	max_velh = 4;
+	
+	max_velh = spd;
 	//parando o mid_velh
 	mid_velh = 0;
 	
@@ -76,7 +77,8 @@ switch(estado)
 		//movendo
 		if(velh != 0)
 		{
-			estado = "movendo"; 
+			estado = "movendo";
+			pulos = pulos_max;
 		}
 		else if(jump2 || !chao)
 		{
@@ -92,7 +94,7 @@ switch(estado)
 	#region movendo
 	case "movendo" :
 	{
-		max_velh = 4;
+		max_velh = spd;
 		//sprites de movimento
 		
 
@@ -100,6 +102,7 @@ switch(estado)
 		//troca de estado parado
 		if(abs(velh) < .1)
 		{
+			pulos = pulos_max;
 			estado = "parado";	
 			velv = 0;
 		}else if(jump2 || !chao)
@@ -117,7 +120,7 @@ switch(estado)
 	#region pulo
 	case "pulando" :
 	{
-		max_velh = 4;
+		max_velh = spd;
 		//aplica grabidade
 		aplicando_gravidade();
 
@@ -136,7 +139,7 @@ switch(estado)
 		if(chao)
 		{
 			estado = "parado";
-			
+			pulos = pulos_max;
 		}else if (dash and dashQQ > 0)
 		{
 			dashQQ -= 1;
@@ -189,6 +192,7 @@ switch(estado)
 		
 		if(image_index >= image_number - 1)
 		{
+			pulos = pulos_max;
 			estado = "parado";
 		}	
 		break;
@@ -196,14 +200,8 @@ switch(estado)
 	#endregion	
 }
 
-if(y > 832){
-	if(global.checkpointR != 0)
-	{
-		room_goto(global.checkpointR)
-	}
-	else
-	{
-		room_restart();
-	}
+if(y > 10032){
+	src_death();
 }
 
+show_debug_message(vida);

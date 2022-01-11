@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_checkpoint",
-    "path": "sprites/spr_checkpoint/spr_checkpoint.yy",
+    "name": "spr_checkpointF",
+    "path": "sprites/spr_checkpointF/spr_checkpointF.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
     "path": "folders/Objects/Solidos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_checkpoint",
+  "name": "obj_checkpointF",
   "tags": [],
   "resourceType": "GMObject",
 }

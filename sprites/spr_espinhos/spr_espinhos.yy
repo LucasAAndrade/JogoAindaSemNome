@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Solidos",
+    "path": "folders/Sprites/Solidos.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_espinhos",
