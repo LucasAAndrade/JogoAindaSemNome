@@ -2,6 +2,7 @@
 
 max_vida = 1;
 vida_atual = max_vida;
+morra = true;
 
 velh = 0;
 velv = 0;

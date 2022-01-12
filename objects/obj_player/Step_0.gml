@@ -1,6 +1,7 @@
 //movimentação do personagem
 var left, right, dash, corda;
 var chao = place_meeting(x, y + 1, obj_block);
+var chao1 = place_meeting(x, y + 1, obj_espinho_que_muda);
 var onAWall = place_meeting(x-5, y, obj_block) - place_meeting(x+5, y, obj_block);
 corda = mouse_check_button_pressed(mb_left);
 vida = global.vidaT;
@@ -42,7 +43,7 @@ if(ativo && !place_meeting(x, y, obj_block))
 
 if(mouse_check_button_released(mb_left))
 {
-	velv = 0;
+
 	massa = 1;
 	ativo = false;
 
@@ -80,10 +81,10 @@ switch(estado)
 			estado = "movendo";
 			pulos = pulos_max;
 		}
-		else if(jump2 || !chao)
+		else if(jump2 || !chao && !chao1 )
 		{
 			estado = "pulando";
-		}else if (dash and dashQQ > 0)
+		}else if (dash and dashQQ > 0 and dash_ativo == true)
 		{
 			dashQQ -= 1;
 			estado = "dash";
@@ -105,10 +106,10 @@ switch(estado)
 			pulos = pulos_max;
 			estado = "parado";	
 			velv = 0;
-		}else if(jump2 || !chao)
+		}else if(jump2 || !chao && !chao1)
 		{
 			estado = "pulando";
-		}else if (dash and dashQQ > 0)
+		}else if (dash and dashQQ > 0 and dash_ativo == true)
 		{
 			estado = "dash";
 			dashQQ -= 1;
@@ -136,11 +137,11 @@ switch(estado)
 		}
 		
 		//troca de estado 
-		if(chao)
+		if(chao || chao1)
 		{
 			estado = "parado";
 			pulos = pulos_max;
-		}else if (dash and dashQQ > 0)
+		}else if (dash and dashQQ > 0 and dash_ativo == true)
 		{
 			dashQQ -= 1;
 			estado = "dash";

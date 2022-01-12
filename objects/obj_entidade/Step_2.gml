@@ -15,9 +15,8 @@ var _velh = sign(velh);
 //horizontal
 repeat(abs(velh))
 {
-	if(place_meeting(x + _velh, y, obj_block))
+	if(place_meeting(x + _velh, y, obj_block) || place_meeting(x + _velh, y, obj_espinho_que_muda))
 	{
-
 		velh = 0;
 		break;
 	}
@@ -25,7 +24,7 @@ repeat(abs(velh))
 }
 repeat(abs(velv))
 {
-	if(place_meeting(x, y + _velv, obj_block))
+	if(place_meeting(x, y + _velv, obj_block) || place_meeting(x, y + _velv, obj_espinho_que_muda))
 	{	
 		dashQQ = dashQ;
 		velv = 0;
@@ -33,4 +32,12 @@ repeat(abs(velv))
 	}
 	y += _velv;
 }
+
+
+
+
+
+
+
+
 

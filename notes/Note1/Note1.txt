@@ -11,7 +11,7 @@
 	1.10 vida -  pronto;
 	1.11 aumentar vida - pronto;
 	1.12 aumentar o slot de vida - pronto;
-	1.13 interação - 
+	1.13 interação - pronto; 
 	
 2. State Machine
 	2.1 Parado - pronto;
