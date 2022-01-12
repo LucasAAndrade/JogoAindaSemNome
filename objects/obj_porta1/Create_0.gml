@@ -1,0 +1,1 @@
+global.jaabri1 = false;
