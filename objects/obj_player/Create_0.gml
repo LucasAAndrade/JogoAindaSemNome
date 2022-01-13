@@ -31,6 +31,9 @@ mostra_estado = true;
 //upgrades
 pulos_max = 1;
 
+//variavel morte;
+morte= false;
+
 //metodo pular
 pular = function()
 {
