@@ -86,6 +86,7 @@ switch(estado)
 			estado = "pulando";
 		}else if (dash and dashQQ > 0 and dash_ativo == true)
 		{
+			image_index = 0;
 			dashQQ -= 1;
 			estado = "dash";
 		}
@@ -111,6 +112,7 @@ switch(estado)
 			estado = "pulando";
 		}else if (dash and dashQQ > 0 and dash_ativo == true)
 		{
+			image_index = 0;
 			estado = "dash";
 			dashQQ -= 1;
 		}
@@ -121,6 +123,7 @@ switch(estado)
 	#region pulo
 	case "pulando" :
 	{
+		sprite_index = spr_player;
 		max_velh = spd;
 		//aplica grabidade
 		aplicando_gravidade();
@@ -143,12 +146,14 @@ switch(estado)
 			pulos = pulos_max;
 		}else if (dash and dashQQ > 0 and dash_ativo == true)
 		{
+			image_index = 0;
 			dashQQ -= 1;
 			estado = "dash";
 		}
 		//walljump
 		var wall = place_meeting(x + sign(velh), y, obj_block);
 		if(wall){
+			sprite_index = spr_wallJump;
 			//fazendo eu pular ao apertar o espaço (jump)
 			if(jump2)
 			{
