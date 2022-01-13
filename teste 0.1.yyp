@@ -40,7 +40,7 @@
     {"id":{"name":"spr_blockHook","path":"sprites/spr_blockHook/spr_blockHook.yy",},"order":1,},
     {"id":{"name":"rm_inicial","path":"rooms/rm_inicial/rm_inicial.yy",},"order":1,},
     {"id":{"name":"spr_vida_grande","path":"sprites/spr_vida_grande/spr_vida_grande.yy",},"order":2,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -56,7 +56,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_inicial","path":"rooms/rm_inicial/rm_inicial.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

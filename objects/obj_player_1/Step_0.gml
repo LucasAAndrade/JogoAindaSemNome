@@ -24,6 +24,7 @@ else velv++;
 
 if(mouse_check_button_pressed(mb_left) )
 {
+	
 	mx = mouse_x;
 	my = mouse_y;
 	if(place_meeting(mx,my,	obj_blockHook) and my < y)
@@ -34,6 +35,7 @@ if(mouse_check_button_pressed(mb_left) )
 
 if(ativo && !place_meeting(x, y, obj_block))
 {
+
 	velv = 10;
 	massa = 0.3;
 	x += (mx - x ) * 0.1;
