@@ -97,7 +97,7 @@ switch(estado)
 	{
 		max_velh = spd;
 		//sprites de movimento
-		sprite_index = spr_player_andando;	
+		
 
 		
 		//troca de estado parado

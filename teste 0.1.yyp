@@ -13,7 +13,6 @@
     {"id":{"name":"spr_vida","path":"sprites/spr_vida/spr_vida.yy",},"order":1,},
     {"id":{"name":"obj_blockHook","path":"objects/obj_blockHook/obj_blockHook.yy",},"order":1,},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},"order":0,},
-    {"id":{"name":"spr_player_andando","path":"sprites/spr_player_andando/spr_player_andando.yy",},"order":3,},
     {"id":{"name":"spr_player_dash","path":"sprites/spr_player_dash/spr_player_dash.yy",},"order":0,},
     {"id":{"name":"spr_espinhos_muda","path":"sprites/spr_espinhos_muda/spr_espinhos_muda.yy",},"order":6,},
     {"id":{"name":"obj_espinho_que_muda","path":"objects/obj_espinho_que_muda/obj_espinho_que_muda.yy",},"order":5,},
