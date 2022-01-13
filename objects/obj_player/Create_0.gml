@@ -19,7 +19,7 @@ max_velh = 4;
 max_velv = 20;
 spd = 6;
 
-dash_ativo = false;
+dash_ativo = true;
 mvtLocked = 0;
 dashSpd = 20;
 dashDuration = 0;
